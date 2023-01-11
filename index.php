@@ -1,5 +1,7 @@
-<?php require_once __DIR__ . '/login_check.php'; ?>
 <?php
+//require_once __DIR__ . '/login_check.php';
+if(!isset($_SESSION)) session_start();
+
 require_once __DIR__ . '/inc/functions.php';
 include __DIR__ . '/inc/header.php';
 try {
