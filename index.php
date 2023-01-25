@@ -19,7 +19,7 @@ try {
     $page = $dbh->prepare($sql);
     $page->execute();
     $max = $page->fetch()['cnt'] ;
-var_dump($max); // 
+// var_dump($max); 
 
     $sql = 'SELECT * FROM books WHERE 1 '; // 本を検索する
     $sql .= array_key_exists('title', $get) && !empty(  $get['title']) ? "AND title LIKE '%$get[title]%' " : ''; //タイトルの部分一致
@@ -31,7 +31,7 @@ var_dump($max); //
     $sql .= " ORDER BY id ";
     $sql .= empty($_GET['p']) ? " LIMIT 0,5" : " LIMIT $_GET[p],5";
     
-var_dump($sql);
+// var_dump($sql);
     $statement = $dbh->prepare($sql);
     $statement->execute();
 ?>
