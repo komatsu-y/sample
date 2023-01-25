@@ -1,3 +1,10 @@
+.btn{     display: inline-block;
+  width: 1.7rem;
+  border: solid 1px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1rem 0.25rem; 
+}
 header {
 	margin:20px 0px 0px 30px;
 	height:77px;
@@ -16,7 +23,7 @@ h1 {
 }
 form {
   /* フォームをページの中央に置く */
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   /* フォームの範囲がわかるようにする */
   padding: 1em;
   border: 1px solid #CCC;
@@ -40,22 +47,19 @@ form li + li {
 label {
   /* すべてのラベルを同じサイズにして、きちんと揃える */
   display: inline-block;
-  width: 260px;
+  width: 25%;
   text-align: right;
 }
 
 
 input, textarea {
-  /* すべてのテキストフィールドのフォント設定を一致させる
-     デフォルトで、textarea は等幅フォントが設定されている */
   font: 1em sans-serif;
-
-  /* すべてのテキストフィールドを同じサイズにする */
-  width: 260px;
+  width: 55%;
   box-sizing: border-box;
-
-  /* テキストフィールドのボーダーの外見を同一にする */
   border: 1px solid #999;
+  border: 1px solid #999;
+  padding: 0.2rem 0.7rem;
+  margin: 0.3rem;
 }
 
 input:focus,
